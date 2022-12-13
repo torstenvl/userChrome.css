@@ -9,6 +9,8 @@ the use of userChrome.css by default.  Ironically, these newer versions have
 poor user interfaces, and are most in need of customization to override bad
 design.
 
+<img width="1724" alt=" 2022-12-13 at 1620  SS" src="https://user-images.githubusercontent.com/19603155/207446084-e56e450d-ed95-4561-a509-198db69f72f1.png">
+
 To install:
 
 1.  Go to `about:config` in a Firefox window.
@@ -26,7 +28,8 @@ Features
 - Disables the cartoonish animated location bar
 - Makes menus more compact and navigable, with fewer icons
 - Adjusts the placement and size of the mute icon for tabs with sound
-- Restores traditional tab design and makes it easier to distinguish between
+- Restores traditional tab design and makes it easier
+ to distinguish between
 your active tab and inactive tabs, as well as easier to distinguish _between_
 inactive tabs
 
