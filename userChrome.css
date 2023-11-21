@@ -1,4 +1,4 @@
- /*—————————————————————————————————————————————————————————————————————————*\
+/*===========================================================================*\
 |                           Minimalist Professional                           |
 |                                userChrome.css                               |
 |                                                                             |
@@ -25,13 +25,13 @@
 |   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR     |
 |   OTHER DEALINGS IN THE SOFTWARE.                                           |
 |                                                                             |
- \*—————————————————————————————————————————————————————————————————————————*/
+\*===========================================================================*/
 
 
 
- /*=================================*\
+/*===================================*\
 |      GET RID OF MEGABAR POPOUT      |
- \*=================================*/
+\*===================================*/
 :root {
     --mbarstyler-popout-pixels:              0px;       /*       0-8       */
     --mbarstyler-top-bar-display:            none;      /*   block, none   */
@@ -47,32 +47,28 @@
 
 
 
- /*===============================*\
+/*=================================*\
 |      MAKE MENUS MORE COMPACT      |
- \*===============================*/
+\*=================================*/
 menupopup>menu, menupopup>menuitem {   padding-block: 2px !important;   }
 
 
 
- /*====================================*\
-|      MAKE THE MUT BUTTON NOT SUCK      |
- \*====================================*/
-#TabsToolbar {    --user-mute-button-height: 16px;    }
+/*======================================*\
+|       MAKE THE MUTE BUTTON BIGGER      |
+\*======================================*/
 .tab-icon-overlay:not([pinned],[sharing],[crashed]):is([soundplaying],[muted]) {
-    width: var(--user-mute-button-height) !important;
-    height: var(--user-mute-button-height) !important;
-    margin-left: calc(var(--user-mute-button-height) / 2 px) !important;
-    margin-right: 2px !important;
-    margin-top: 5px !important;
-    padding: 0 !important;
+    min-width:  20px !important;
+    min-height: 20px !important;
+    max-width:  20px !important;
+    max-height: 20px !important;
 }
 
 
 
- /*===============================================*\
+/*=================================================*\
 |      MAKE TABS AND NAVIGATION PANEL NOT SUCK      |
- \*===============================================*/
-#navigator-toolbox{ --toolbar-bgcolor: white; }
+\*=================================================*/
 .tab-background:not([selected=true]) {
     border-radius: 3px 3px 0px 0px !important;
     margin-top:     4px !important;
